@@ -1,0 +1,6 @@
+__MACOSX
+.vscode
+node_modules
+bash.exe.stackdump
+yarn.lock
+*.zip

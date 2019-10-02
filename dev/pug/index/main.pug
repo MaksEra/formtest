@@ -1,0 +1,17 @@
+.main
+    .container
+        form.main-form(action="")
+            .main-form__title
+                span Добро пожаловать!<br>Для авторизации используйте вашу электронную почту и пароль.
+            .main-form__inputs
+                .input-block
+                    input#email(type="email", name="email" placeholder="E-mail")
+                .input-block
+                    input#pass(type="password", name="password" placeholder="Пароль")
+                .input-block
+                    input#remember(type="checkbox", name="remember")
+                    label(for="remember")
+                        .input-block__checkbox
+                        span запомнить меня
+            .main-form__send
+                button(type="submit").submit-button Войти

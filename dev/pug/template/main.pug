@@ -1,0 +1,39 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="description", content="Page description")
+		meta(name="keywords", content="page, keywords")
+		meta(name="theme-color", content="#000000")
+		meta(name="copyright", content="Author")
+		meta(name="format-detection", content="telephone=no")
+		meta(property="og:title", content='title')
+		meta(property="og:url", content='url')
+		meta(property="og:type", content='website')
+		meta(property="og:image", content='image')
+		meta(property="og:description", content='description')
+		//-link(rel="stylesheet" type='text/css' href="static/css/jquery.fancybox.min.css")
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+		link(rel="shortcut icon", href="favicon.png", type="image/png")
+		<!--[if lt IE 9]>
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+		<![endif]-->
+		//- script(src="static/js/jquery-4.0.min.js")
+		//- script(src="static/js/main.js")
+	body(class=pageClass)
+		block other
+		.wrapper
+			block header
+			.content
+				block content
+			block footer
+
+		block script
