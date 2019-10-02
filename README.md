@@ -8,4 +8,4 @@ Gulp + Pug + SCSS + BrowserSync
 
 #### Done!!!
 
-**Сайт:** https://maksera.github.io/formtest/build/
+**Сайт:** https://maksera.github.io/formtest/build/index.html
